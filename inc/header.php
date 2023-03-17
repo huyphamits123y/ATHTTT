@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="css/menu.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/cart.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="css/container.css" rel="stylesheet" type="text/css" media="all"/>
 <script src="js/jquerymain.js"></script>
 <script src="js/script.js" type="text/javascript"></script>
@@ -13,6 +14,9 @@
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script> 
 <script type="text/javascript" src="js/nav-hover.js"></script>
+<script type="text/javascript" src="js/cart.js"></script>
+
+<link href="./.vscode/fontawesome-free-5.15.3-web/css/all.min.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
 <script type="text/javascript">
@@ -35,11 +39,8 @@
 			    </div>
 			    <div class="shopping_cart">
 					<div class="cart">
-						<a href="#" title="View my shopping cart" rel="nofollow">
-								<span class="cart_title">Giỏ Hàng</span>
-								
-							</a>
-						</div>
+						<span class="cart_title">Giỏ Hàng<i class="fas fa-shopping-cart"></i></span>
+					</div>
 			      </div>
 		   <div class="login"><a href="login.html">Đăng nhập</a></div>
 		 <div class="clear"></div>
@@ -56,3 +57,29 @@
 	  <div class="clear"></div>
 	</ul>
 </div>
+<div class="cart_shop">
+        <i  class="remove_cart fas fa-window-close"></i>
+        <h1>Giỏ Hàng</h1>
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Chọn</th> 
+                    </tr>
+                </thead>
+                <tbody >
+                    
+                </tbody>
+            </table>
+        </form>
+        <div class="price-total">
+            <p>Tổng tiền: <span>0 </span><sup> đ</sup></p>
+        </div>
+        <div class="oder">
+            
+            <p>Thanh toán</p>
+        </div>  
+    </div>
